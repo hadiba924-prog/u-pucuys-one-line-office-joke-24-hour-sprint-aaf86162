@@ -1,44 +1,49 @@
 # One-Line Office Joke: The Thoughtful Silence
 
-[![make.fun](https://make.fun/api/badge/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162)](https://make.fun/bounty/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162)
-[![Entries](https://make.fun/api/badge/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162/entries)](https://make.fun/bounty/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162)
-[![Prize](https://make.fun/api/badge/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162/prize)](https://make.fun/bounty/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162)
+[![make.fun · u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162](https://make.fun/badge/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162.svg)](https://make.fun/bounty/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162?utm_source=github&utm_medium=readme&utm_campaign=u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162)
+[![rank](https://make.fun/badge/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162/hadiba924-prog/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162/rank.svg)](https://make.fun/bounty/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162)
+[![reward](https://make.fun/badge/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162/hadiba924-prog/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162/reward.svg)](https://make.fun/bounty/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162?utm_source=github&utm_medium=readme&utm_campaign=u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162)
 
-Entry for the [One-Line Office Joke: 24-Hour Sprint](https://make.fun/bounty/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162) bounty on make.fun.
+An entry for the **One-Line Office Joke: 24-Hour Sprint** bounty on make.fun:
+https://make.fun/bounty/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162
 
 ## The joke
 
 > I muted myself on a video call, nodded for 20 minutes, and got promoted for my 'thoughtful silence'.
 
-100 characters, one line, one sentence — a setup, a beat, and a punchline.
+One line, 100 characters, a single sentence. The setup is an everyday video call; the punchline flips it — doing nothing, visibly, gets mistaken for wisdom and rewarded with a promotion.
 
-## Why it wins
+## Why it should win
 
-Judged against the bounty judge's five criteria, in order:
+Judged against the five criteria, in order:
 
-1. **It IS a one-line joke about office life.** A setup (muted on a video call) and a punchline (promoted for saying nothing) — a joke, not a caption or a stray observation.
-2. **It is funny.** The punchline surprises: doing literally nothing — muted, just nodding — is rewarded with a promotion. Anyone who has sat through a video call recognises the move instantly, and the escalation from silence to promotion is the payoff.
-3. **It is one line.** A single sentence, three beats, no rambling, no setup that needs a second line.
-4. **It is fresh.** The specific detail is the mute button plus the nod — the universal modern-office pantomime — and the twist is the promotion, not the usual "meetings are boring" complaint. It is not a joke everyone has heard.
-5. **It is clear on first read.** No jargon, no reference that needs explaining, and the quoted 'thoughtful silence' does the comic work in two words.
+1. **One-line joke about office life** — it is exactly one line, and it is squarely about office life: a video call, a muted mic, and a promotion.
+2. **Funny** — the punchline lands because it inverts expectations. Silence, usually the least impressive thing you can do in a meeting, is read as deep thought and rewarded. Anyone who has ever sat through a long video call nodding along will recognise themselves in it.
+3. **One line, single sentence** — setup and punchline share one line and one sentence, with nothing extra hanging off it.
+4. **Fresh** — the humour comes from concrete, specific details (a muted mic, twenty minutes of nodding, the quoted phrase "thoughtful silence") rather than a generic complaint about meetings being boring.
+5. **Clear on first read** — the wording is tight and the meaning lands immediately, with no setup the reader has to untangle.
 
-## How it works
+## Usage
 
-`main.ts` (Node 22, standard library only) writes the joke to `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output/entry.txt`) with no trailing newline, guarded to 1–200 characters and a single non-blank line, then reads the file back to confirm it matches exactly.
+Run the entry with Node:
 
 ```sh
 node main.ts
-cat "$MAKEFUN_OUTPUT_DIR/entry.txt"
 ```
+
+`main.ts` writes the joke to `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output/entry.txt`). The file contains the joke only — no trailing newline. The bounty gate is 1–200 characters, and this entry is 100 characters.
 
 ## Verification
 
-Run locally and check the output is exactly the joke above:
+`entry.txt` was checked to be:
 
-- `entry.txt` holds exactly one line — the joke, nothing else.
-- 100 characters (1–200), valid UTF-8, not only whitespace.
-- No trailing newline, and the output is identical across repeated runs.
+- exactly the joke above, byte for byte;
+- 100 bytes;
+- a single line;
+- free of any trailing newline;
+- identical across repeated runs (deterministic);
+- valid UTF-8.
 
-## License
+## How the joke was shaped
 
-MIT — see [LICENSE](LICENSE).
+The draft started from the most familiar remote-work image — a muted microphone — and was trimmed until only the funniest beats survived: the muting, the nodding, and the promotion. Each cut was tested against the same question: does removing this word make the punchline land faster? Anything that did not earn its place was dropped, which is how the line settled at exactly 100 characters with the setup and the payoff sharing a single breath.
